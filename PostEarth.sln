@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostEarthClient", "PostEarthClient\PostEarthClient.csproj", "{23D6CB4C-0809-4A1B-80AF-4943D8B9D2FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostEarthServer", "PostEarthServer\PostEarthServer.csproj", "{167BD402-E02D-49CC-BFD1-A6B93C025AE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23D6CB4C-0809-4A1B-80AF-4943D8B9D2FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D6CB4C-0809-4A1B-80AF-4943D8B9D2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D6CB4C-0809-4A1B-80AF-4943D8B9D2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D6CB4C-0809-4A1B-80AF-4943D8B9D2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{167BD402-E02D-49CC-BFD1-A6B93C025AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{167BD402-E02D-49CC-BFD1-A6B93C025AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{167BD402-E02D-49CC-BFD1-A6B93C025AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{167BD402-E02D-49CC-BFD1-A6B93C025AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22CF501D-FF18-41D2-B5FC-03B27F13B3ED}
+	EndGlobalSection
+EndGlobal
