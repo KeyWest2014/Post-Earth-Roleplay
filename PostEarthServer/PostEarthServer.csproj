@@ -49,6 +49,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /y /d "$(TargetPath)" "C:\DevServer\server-data\resources\[postearth]"</PostBuildEvent>
+    <PostBuildEvent>xcopy /y /d "$(TargetPath)" "C:\DevServer\server-data\resources\postearth"</PostBuildEvent>
   </PropertyGroup>
 </Project>

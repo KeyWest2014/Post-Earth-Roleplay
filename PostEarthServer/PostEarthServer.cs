@@ -1,5 +1,4 @@
 ﻿using CitizenFX.Core;
-using System;
 
 namespace PostEarthServer
 {
@@ -7,7 +6,8 @@ namespace PostEarthServer
     {
         public PostEarthServer() 
         {
-            Debug.Write("[PostEarthServer] Plugin has started laoading.");
+            Debug.WriteLine("^2[PostEarth]^7 initialized.");
+
         }
     }
 }
