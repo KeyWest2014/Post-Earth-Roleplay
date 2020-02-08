@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		 
+		<link rel="stylesheet" href="nui://postearth/assets/css/bootstrap.min.css"> 
+		<link rel="stylesheet" href="nui://postearth/assets/css/loadingscreen.css">
+		
+		<title>Loading, Please wait...</title>
+	</head>
+	<body>
+		<div class="container-fluid w-100 h-100 p-0 ">
+			
+			<div class="background-image"></div>
+
+			<div class="main container">
+				<h1 class="title-text">PostEarth</h1>
+
+				<p id="loading-message">Initializing Engine</p>
+				<p id="percent"><span id="progress-caption">0</span>%</p>
+
+				<progress id="progress-bar" min="0" max="100" value="0"></progress>
+			</div>
+		</div>
+		
+		<script src="nui://postearth/assets/js/jquery-3.4.1.min.js"></script>
+		<script src="nui://postearth/assets/js/popper.min.js"></script>
+		<script src="nui://postearth/assets/js/bootstrap.min.js"></script>  
+		<script src="nui://postearth/assets/js/loadingscreen.js"></script>  
+	</body>
+</html>

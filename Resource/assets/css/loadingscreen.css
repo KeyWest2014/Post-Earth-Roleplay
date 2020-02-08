@@ -1,0 +1,76 @@
+@font-face {
+	src: url('nui://postearth/assets/fonts/gravity.woff2');
+	font-family: gravity;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	background: #000;
+	font-family: gravity;
+	color: #FFF;
+}
+
+.main {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), 
+				url('nui://postearth/assets/img/background.png');
+	background-color: #000;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	box-shadow: 0 0 50em black inset;
+
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+}
+
+.title-text {
+	padding-top: 25vh;
+	padding-bottom: 20vh;
+	font-size: 9vw;
+	font-weight: bold;
+	text-align: center;
+}
+
+#loading-message {
+	display: inline-block;
+	transition: opacity 0.25s;
+}
+
+#percent {
+	float: right;
+}
+
+progress[value] {
+	width: 100%;
+	height: 2rem;
+	-webkit-appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+	background-color: #444;
+	border-radius: 1rem;
+}
+progress[value]::-webkit-progress-value {
+    transition: width 0.5s;
+}
+progress::-webkit-progress-value {
+	background: #FF4500;
+	border-radius: 1rem;
+}

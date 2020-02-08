@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using CitizenFX.Core;
 using CitizenFX.Core.Native;
 
-namespace PostEarthClient.Core
+namespace PostEarthServer.Core
 {
     class PostEarthPlugin : BaseScript
     {
@@ -14,8 +14,8 @@ namespace PostEarthClient.Core
         {
             PluginName = this.GetType().Name;
             if (PluginName != "PostEarthPlugin") { 
-                EventHandlers["onClientResourceStart"] += new Action<string>(OnResourceStart);
-                EventHandlers["onClientResourceStop"] += new Action<string>(OnResourceStop);
+                EventHandlers["onResourceStart"] += new Action<string>(OnResourceStart);
+                EventHandlers["onResourceStop"] += new Action<string>(OnResourceStop);
             }
         }
 
