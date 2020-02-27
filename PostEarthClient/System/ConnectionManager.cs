@@ -1,38 +1,31 @@
 ﻿using CitizenFX.Core.Native;
+using Newtonsoft.Json;
 using PostEarthClient.Core;
 using System.Threading.Tasks;
+
+/* 
+ * TriggerServerEvent("PostEarth.UserAccountService.RequestProfile", "0x5DC", "Password123");
+ */
 
 namespace PostEarthClient.System
 {
     class ConnectionManager : PostEarthPlugin
     {
-        private const int LOADING_TICK_RATE = 1000;
-        private const int ALIVE_TICK_RATE = 5000;
+        private int TickRate = 1000;
 
-        private int TickRate = LOADING_TICK_RATE;
-
-        public ConnectionManager() 
+        protected override async Task OnTick()
         {
-        
-        }
-
-        private void RequestUserProfile() 
-        {
-            TriggerServerEvent("PostEarth.UserAccountService.RequestProfile", "0x5DC", "Password123");
-        }
-
-        protected override void OnStart()
-        {
-        }
-
-        private bool hasSent = false;
-
-        protected override async Task OnTick() 
-        {
-            if (!hasSent) {
-                hasSent = true;
-                RequestUserProfile();
+            if (API.NetworkIsPlayerActive(LocalPlayer.Handle)) 
+            {
+                API.SendNuiMessage(JsonConvert.SerializeObject(new
+                {
+                    message = "closeLoadingScreen"
+                }));
+                API.SendNuiMessage(JsonConvert.SerializeObject(new {
+                    message = "openConnectionPortal"
+                }));
             }
+
             await Delay(TickRate); 
         }
     }

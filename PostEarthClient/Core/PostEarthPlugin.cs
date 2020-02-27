@@ -39,6 +39,11 @@ namespace PostEarthClient.Core
             DebugLog("stopped succesfully");
         }
 
+        protected void SendDUIMessage() 
+        {
+        
+        }
+
         protected void DebugLog(string log) {
             Debug.WriteLine($"^2[{ResourceName}]^0 {PluginName} {log}^7");
         }
